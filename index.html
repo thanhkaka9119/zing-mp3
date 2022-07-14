@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+        integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+        crossorigin="anonymous" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./access/css/grid.css">
+    <link rel="stylesheet" href="./access/css/base.css">
+    <link rel="stylesheet" href="./access/css/style.css">
+</head>
+
+<body>
+    <div class="main">
+        <header class="header">
+            <div class="header__logo">
+                <div class="header__logo-img"></div>
+            </div>
+            <nav class="nav-top">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__item-link" title="Cá nhân">
+                            <i class="nav-icon fas fa-plus-circle"></i>
+                            <span>Cá Nhân</span>
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__item-link" title="Khám phá">
+                            <i class="nav-icon fas fa-plus-circle"></i>
+                            <span>Khám phá</span>
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__item-link" title="zingchart">
+                            <i class="nav-icon fas fa-plus-circle"></i>
+                            <span>#zingchart</span>
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__item-link" title="Radio">
+                            <i class="nav-icon fas fa-plus-circle"></i>
+                            <span>Radio</span>
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__item-link" title="Theo dõi">
+                            <i class="nav-icon fas fa-plus-circle"></i>
+                            <span>Theo dõi</span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="nav-line"></div>
+            <nav class="nav-bottom">
+                <ul class="nav-list">
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__item-link" title="Nhạc mới">
+                            <i class="nav-icon fas fa-music"></i>
+                            <span>Nhạc mới</span>
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__item-link" title="Thể loại">
+                            <i class="nav-icon fas fa-chart-bar"></i>
+                            <span>Thể loại</span>
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__item-link" title="Top 100">
+                            <i class="nav-icon fas fa-star"></i>
+                            <span>Top 100</span>
+                        </a>
+                    </li>
+                    <li class="nav-list__item">
+                        <a href="" class="nav-list__item-link" title="MV">
+                            <i class="nav-icon fas fa-chart-bar"></i>
+                            <span>MV</span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="nav-banner">
+                    <p class="nav-banner__text">Nghe nhạc không quảng cáo cùng kho nhạc VIP</p>
+                    <a href="" class="z-btn nav-banner__link">NÂNG CẤP VIP
+                        <span class="nav-banner__overlay"></span>
+                    </a>
+                </div>
+                <div class="nav-edit">
+                    <div class="nav-edit__title">
+                        <p>Thư Viện</p>
+                        <i class="nav-edit-icon fas fa-pen">
+                            <span class="nav-edit__notice small-notice">Chỉnh sửa</span>
+                        </i>
+                    </div>
+                    <ul class="nav-list">
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__item-link" title="Bài hát">
+                                <i class="nav-icon fas fa-headphones"></i>
+                                <span>Bài hát</span>
+                            </a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__item-link" title="Playlist">
+                                <i class="nav-icon fas fa-headphones"></i>
+                                <span>Playlist</span>
+                            </a>
+                        </li>
+                        <li class="nav-list__item">
+                            <a href="" class="nav-list__item-link" title="Gần đây">
+                                <i class="nav-icon fas fa-headphones"></i>
+                                <span>Gần đây</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <div class="nav-end">
+                <i class="nav-end__icon fas fa-plus"></i>
+                <p class="nav-end__text">Tạo playlist mới</p>
+            </div>
+        </header>
+        <!-- contain -->
+        <div class="contain grid">
+            <!-- search -->
+            <div class="row">
+                <div class="col l-12">
+                    <nav class="navbar">
+                        <span class="navbar-arrow"><i class="fas fa-arrow-left"></i></span>
+                        <span class="navbar-arrow navbar-arrow--disabled"><i class="fas fa-arrow-right"></i></span>
+                        <div class="navbar-search">
+                            <span><i class="navbar-search__icon fas fas fa-search"></i></span>
+                            <input type="text" class="navbar-search__input"
+                                placeholder="Nhập tên bài hát, nghệ sĩ hoặc MV...">
+                            <div class="search-history">
+                                <h3 class="search-history__title">Đề xuất cho bạn</h3>
+                                <ul class="search-history__list">
+                                    <li class="history-item">
+                                        <a href="" class="history-item__link">
+                                            <i class="history-item__icon fas fa-arrow-up"></i>
+                                            <span class="history-item__title">still life</span>
+                                        </a>
+                                    </li>
+                                    <li class="history-item">
+                                        <a href="" class="history-item__link">
+                                            <i class="history-item__icon fas fa-arrow-up"></i>
+                                            <span class="history-item__title">muốn em là</span>
+                                        </a>
+                                    </li>
+                                    <li class="history-item">
+                                        <a href="" class="history-item__link">
+                                            <i class="history-item__icon fas fa-arrow-up"></i>
+                                            <span class="history-item__title">zing choice</span>
+                                        </a>
+                                    </li>
+                                    <li class="history-item">
+                                        <a href="" class="history-item__link">
+                                            <i class="history-item__icon fas fa-arrow-up"></i>
+                                            <span class="history-item__title">đám cưới nha</span>
+                                        </a>
+                                    </li>
+                                    <li class="history-item">
+                                        <a href="" class="history-item__link">
+                                            <i class="history-item__icon fas fa-arrow-up"></i>
+                                            <span class="history-item__title">zingchart</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="navbar-options">
+                            <button class="navbar-options__item">
+                                <i class="option-icon fas fa-gem"></i>
+                                <span class="option-notice">Chủ đề</span>
+                            </button>
+                            <button href="" class="navbar-options__item option-vip">
+                                <i class="option-icon fas fa-gem"></i>
+                                <span class="option-notice">Nâng cấp vip</span>
+                            </button>
+                            <button class="navbar-options__item">
+                                <i class="option-icon fas fa-gem"></i>
+                                <span class="option-notice">Tải lên</span>
+                            </button>
+                            <button class="navbar-options__item">
+                                <i class="option-icon fas fa-gem"></i>
+                                <span class="option-notice">Cài đặt</span>
+                            </button>
+                            <button class="navbar-options__item option-account"
+                                style="background-image: url(./access/img/account_avt.jpg);"></button>
+                        </div>
+                    </nav>
+                </div>
+            </div>
+            <!-- adv -->
+            <div class="row">
+                <div class="col l-12">
+                    <div class="adv"></div>
+                </div>
+            </div>
+            <!-- list music -->
+            <div class="media row">
+                <div class="col l-4">
+                    <div class="media-left">
+                        <div class="media-left__background">
+                            <figure class="media-left__img">
+                                <img src="./access/img/top_music.webp" alt="">
+                            </figure>
+                            <div class="opacity"></div>
+                        </div>
+                        <div class="media-left__content">
+                            <h2 class="media-left__title">Top 100 Nhạc Electronic/Dance Âu Mỹ Hay Nhất</h2>
+                            <div class="media-left__describe">
+                                <p class="media-left__describe-time">Cập nhật: 08/04/2022</p>
+                                <p class="media-left__describe-link">
+                                    <a href="">Alan Walker</a>
+                                    <a href="">K-391</a>
+                                    <a href="">Emelie Hollow</a>
+                                    <a href="">Sabrina Carpenter</a>
+                                </p>
+                                <p class="media-left__describe-like">247K người yêu thích</p>
+                            </div>
+                            <!-- media-left__control--pause -->
+                            <div class="actions">
+                                <div class="media-left__control media-left__control--pause z-btn">
+                                    <div class="content__control content__control--play">
+                                        <i class="content__control-icon fas fa-play"></i>
+                                        <span>TIẾP TỤC PHÁT</span>
+                                    </div>
+                                    <div class="content__control content__control--pause">
+                                        <i class="content__control-icon fas fa-pause"></i>
+                                        <span>TẠM DỪNG</span>
+                                    </div>
+                                    <div class="opacity-control opacity"></div>
+                                </div>
+                                <div class="media-left__control-icon">
+                                    <i class="control-more__icon fas fa-heart">
+                                        <span class="control-icon__like small-notice">Thêm vào thư viện</span>
+                                    </i>
+                                    <i class="control-more__icon fas fa-grip-lines">
+                                        <span class="control-icon__other small-notice">Khác</span>
+                                    </i>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col l-8">
+                    <div class="media-right">
+                        <p class="media-right__describe">
+                            <span class="media-right__describe-drak">Lời tựa </span>Top 100 Nhạc Electronic/Dance Âu Mỹ
+                            là danh sách 100 ca khúc hot nhất hiện tại của thể loại Top 100 Nhạc Electronic/Dance Âu Mỹ,
+                            được Zing MP3 tự động tổng hợp dựa trên thông tin số liệu lượt nghe và lượt chia sẻ của từng
+                            bài hát trên phiên bản web và phiên bản Mobile. Dữ liệu sẽ được lấy trong 30 ngày gần nhất
+                            và được cập nhật liên tục.
+                        </p>
+                        <div class="song-list-select">
+                            <div class="music select-header">
+                                <div class="music-left">
+                                    <i class="music-left__icon fas fa-music"></i>
+                                    <span>BÀI HÁT</span>
+                                </div>
+                                <div class="music-content">
+                                    <span>ALBUM</span>
+                                </div>
+                                <div class="music-right">
+                                    <span>THỜI GIAN</span>
+                                </div>
+                            </div>
+                            <div class="list-song">
+                               
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="music-player">
+        <div class="music-info">
+            
+        </div>
+        <div class="control-player">
+            <div class="control">
+                <div class="btn btn-repeat">
+                    <i class="fas fa-redo"></i>
+                </div>
+                <div class="btn btn-prev">
+                    <i class="fas fa-step-backward"></i>
+                </div>
+                <div class="btn btn-toggle-play">
+                    <i class="fas fa-pause"></i>
+                    <i class="fas fa-play active"></i>
+                </div>
+                <div class="btn btn-next">
+                    <i class="fas fa-step-forward"></i>
+                </div>
+                <div class="btn btn-random">
+                    <i class="fas fa-random"></i>
+                </div>
+            </div>
+            <input id="progress" class="progress" type="range" value="0" step="1" min="0" max="100">
+            <audio class="play-audio" src=""></audio>
+        </div>
+        <div class="control-more">
+            <div class="btn btn-mv">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="btn btn-mic">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="btn btn-window">
+                <i class="fas fa-heart"></i>
+            </div>
+            <div class="btn btn-volume">
+                <i class="fas fa-heart"></i>
+            </div>
+            <input id="volume" class="volume" type="range" value="1" step="0.1" min="0" max="1">
+        </div>
+        </div>
+    </div>
+    <script src="./access/js/main.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,121 @@
+:root{
+   --img-logo: url(../img/logo-dark.svg);
+   --navigation-text: #dadada;
+   --text-hover: #fff;
+   --nav-line: #393243;
+   --text-primary: #fff;
+   --black: #32323d;
+   --alpha-bg: hsla(0,0%,100%,0.1);
+   --border-primary: hsla(0,0%,100%,0.1);
+   --search-text: #eee;
+   --search-background: #2F2739;
+   --icon-color: #d8d8d8;
+   --primary-bg: #432275;
+   --dark-alpha-50: rgba(0,0,0,0.5);
+   --text-secondary: hsla(0,0%,100%,0.5);
+   --text-three: #c662ef;
+   --text-four: #7B7781;
+   --media-btn: #7200a1;
+   --background-hover: #2E2637;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: inherit;
+}
+html{
+    font-size: 62.5%;
+    line-height: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    box-sizing: border-box;
+}
+.z-btn{
+    display: inline-block;
+    padding: .2rem 3rem;
+    border-radius: 100px;
+    background-color: var(--alpha-bg);
+    border: 1px solid var(--border-primary);
+
+    color: var(--black);
+    font-size: 1rem;
+    font-weight:700;
+    text-transform: uppercase;
+    text-decoration: none;
+}
+.small-notice{
+    min-width: 7rem;
+    display: none;
+    background-color: #32323d;
+    padding: .5rem 0;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+
+    animation: fadeIn ease-in .2s;
+}
+.small-notice::after{
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-width: .6rem .7rem;
+    border-style: solid;
+    border-color: #32323d transparent transparent transparent;
+}
+.option-notice{
+    position: absolute;
+    top: 120%;
+    left: -25%;
+
+    min-width: 6rem;
+    display: none;
+    background-color: #32323d;
+    padding: .5rem 0;
+    border-radius: 4px;
+
+    font-weight: 400;
+    font-size: 1.3rem;
+    text-align: center;
+    color: var(--navigation-text);
+
+    animation: fadeIn ease-in .2s;
+}
+.option-notice::after{
+    content: "";
+    position: absolute;
+    top: -50%;
+    left: 50%;
+    transform: translateX(-50%);
+
+    border-width: .6rem .7rem;
+    border-style: solid;
+    border-color: transparent transparent #32323d transparent;
+}
+.btn{
+    position: relative;
+    --height: 3rem;
+    margin-left: 1rem;
+    width: var(--height);
+    height: var(--height);
+    border-radius: 50%;
+
+    font-size: 1.4rem;
+    line-height: var(--height);
+    color: var(--text-primary);
+    text-align: center;
+    cursor: pointer;
+}
+
+/* animation */
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
